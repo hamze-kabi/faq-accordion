@@ -1,0 +1,148 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-pink: hsl(275, 100%, 97%);
+  --grayish-purple: hsl(292, 16%, 49%);
+  --dark-purple: hsl(292, 42%, 14%);
+}
+
+/* Box sizing rules */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-image: url("assets/images/background-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-color: var(--light-pink);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Remove built-in form typography styles */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Create a root stacking context */
+#root, #__next {
+  isolation: isolate;
+}
+
+@font-face {
+  font-family: "worksans";
+  src: url("assets/fonts/static/WorkSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "worksans";
+  src: url("assets/fonts/static/WorkSans-Bold.ttf");
+  font-weight: bold;
+}
+
+#background-pattern-mobile {
+    position: relative;
+}
+
+#background-pattern-desktop {
+  display: none;
+  position: relative;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: "worksans";
+  background-color: var(--white);
+  margin: 20vh 10vw;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.title {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.question-div {
+  display: flex;
+  font-weight: 600;
+}
+
+.question-div:hover {
+  cursor: pointer;
+}
+
+.icon-plus, .icon-minus {
+  position: absolute;
+  right: 13vw;
+  transition: opacity 0.5s;
+  pointer-events: none;
+}
+
+.icon-minus {
+  opacity: 0;
+}
+
+/* due to icon-plus and icon-minus are opsition: absolute, space for icon-plus and 
+icon-mius  is zero, .invisible is added so as to create the needed space for them*/
+.invisible {
+  opacity: 0;
+}
+
+.answer {
+  color: var(--grayish-purple);
+  font-size: small;
+  transition: max-height 0.5s;
+  overflow: hidden;
+  max-height: 0rem;
+}
+
+.answer-show {
+  max-height: 20rem;
+}
+
+footer {
+  left: 0; 
+  right: 0; 
+  bottom: 5vh;
+  margin-inline: auto; 
+  width: fit-content;
+  font-size: 0.7rem;
+}
+
+footer span {
+  font-weight: 700;
+}
+
+@media only screen and (width > 1023px) {
+
+  body {
+    background-image: url("assets/images/background-pattern-desktop.svg");
+  }
+
+  main {
+    top: 15vh;
+  }
+}

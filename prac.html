@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="a">aaaaaaaa
+    <div class="b">mmmmmm</div>
+    <div class="c">nnnnnnn</div>
+  </div>
+  <div class="a">bbbbbbbb
+    <div class="b">mmmmmm</div>
+    <div class="c">nnnnnnn</div>
+  </div>
+  <div class="a">cccccccc
+    <div class="b">mmmmmm</div>
+    <div class="c">nnnnnnn</div>
+  </div>
+  <script>
+    const a = document.querySelectorAll(".a");
+    a.forEach( el =>
+      el.addEventListener("click", 
+        function bg () {
+          const childrenz = this.children;
+          Array.from(childrenz).forEach(ele => {
+            if (ele && ele.className === "b") {
+              ele.style.backgroundColor = "black"
+            }
+          })
+        }
+      )
+    )
+  </script>
+</body>
+</html>
