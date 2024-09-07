@@ -15,9 +15,9 @@ This is a solution to the [Meet landing page challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![desktop version](screenshots/desktop screenshot.png)
+![desktop version](screenshots/desktop-screenshot.png)
 
-[mobile version](screenshots/mobile screenshot.png)
+[mobile version](screenshots/mobile-screenshot.png)
 
 ### Links
 
