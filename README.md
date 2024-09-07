@@ -21,8 +21,8 @@ This is a solution to the [Meet landing page challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [https://github.com/hamze-kabi/meet-landing-page](https://github.com/hamze-kabi/meet-landing-page)
-- Live Site URL: [https://hamze-kabi.github.io/meet-landing-page/](https://hamze-kabi.github.io/meet-landing-page/)
+- Solution URL: [https://github.com/hamze-kabi/faq-accordion](https://github.com/hamze-kabi/faq-accordion)
+- Live Site URL: [https://hamze-kabi.github.io/faq-accordion/](https://hamze-kabi.github.io/faq-accordion/)
 
 ## My process
 
